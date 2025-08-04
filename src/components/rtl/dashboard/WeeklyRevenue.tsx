@@ -1,9 +1,9 @@
 import Card from 'components/card';
 import BarChart from 'components/charts/BarChart';
-import {
-  barChartDataWeeklyRevenue,
-  barChartOptionsWeeklyRevenue,
-} from 'variables/charts';
+// import {
+//   barChartDataWeeklyRevenue,
+//   barChartOptionsWeeklyRevenue,
+// } from 'variables/charts';
 import { MdBarChart } from 'react-icons/md';
 
 const WeeklyRevenue = () => {
@@ -20,10 +20,10 @@ const WeeklyRevenue = () => {
 
       <div className="md:mt-16 lg:mt-0">
         <div className="h-[250px] w-full xl:h-[350px]">
-          <BarChart
+          {/* <BarChart
             chartData={barChartDataWeeklyRevenue}
             chartOptions={barChartOptionsWeeklyRevenue}
-          />
+          /> */}
         </div>
       </div>
     </Card>

@@ -36,10 +36,8 @@ const routes = [
   {
     name: 'Manajemen Data Wisatawan Asing (WNA)',
     layout: '/admin',
-    path: 'dashboard1',
+    path: 'wna',
     icon: <MdOutlineBarChart className="h-6 w-6" />,
-
-    secondary: true,
   },
   {
     name: 'Rekonsilisasi Keuangan',
