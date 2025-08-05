@@ -43,7 +43,7 @@ const routes = [
     name: 'Rekonsilisasi Keuangan',
     layout: '/admin',
     icon: <FaSackDollar className="h-6 w-6" />,
-    path: 'dashboard2',
+    path: 'rekonsiliasi-keuangan',
   },
   {
     name: 'Monitoring & Logging (Audit Trail)',

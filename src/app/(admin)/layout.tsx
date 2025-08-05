@@ -20,7 +20,7 @@ export default function Admin({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   if (isWindowAvailable()) document.documentElement.dir = 'ltr';
   return (
-    <div className="flex h-full w-full bg-lightRed1 dark:bg-background-900 bg-[url('/img/bg/bg-red-admin.png')] bg-contain bg-no-repeat">
+    <div className="flex h-full w-full bg-lightRed1 dark:bg-background-900 bg-[url('/img/bg/bg-red-bali.jpg')] bg-contain bg-no-repeat bg-fixed">
       <Sidebar routes={routes} open={open} setOpen={setOpen} variant="admin" />
       {/* Navbar & Main Content */}
       <div className="h-full w-full font-dm dark:bg-navy-900">

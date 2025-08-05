@@ -3,7 +3,7 @@ import React from 'react';
 
 type Props = {};
 
-const WarningBanner = (props: Props) => {
+export const WarningBanner = (props: Props) => {
   return (
     <div className="w-full max-w-6xl mx-auto">
       <div className="bg-solidCreame1 rounded-xl flex items-center border-l-8 border-solidYellow1">
@@ -19,4 +19,15 @@ const WarningBanner = (props: Props) => {
   );
 };
 
-export default WarningBanner;
+export const WarningBannerVA = (props: Props) => {
+  return (
+    <div className="w-full max-w-6xl mx-auto">
+      <div className="bg-solidCreame1 rounded-xl flex items-center border-l-8 border-solidYellow1">
+        <WarningIcon />
+        <div className="text-solidBrown1 font-bold">
+          virtual account Bank ABC belum melakukan penyetoran selama 2 hari
+        </div>
+      </div>
+    </div>
+  );
+};

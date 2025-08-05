@@ -8,11 +8,24 @@ const Widget = (props: {
   extra?: string;
   isLive?: boolean;
   subtitleColor?: string;
+  isBordered?: boolean;
 }) => {
-  const { icon, title, subtitle, percentage, extra, isLive, subtitleColor } =
-    props;
+  const {
+    icon,
+    title,
+    subtitle,
+    percentage,
+    extra,
+    isLive,
+    subtitleColor,
+    isBordered,
+  } = props;
   return (
-    <Card extra="relative !flex-row flex-grow items-center rounded-[20px]">
+    <Card
+      extra={`relative !flex-row flex-grow items-center rounded-[20px] ${
+        isBordered && 'border'
+      }`}
+    >
       {/* LIVE badge */}
       {isLive && (
         <div className="absolute top-2 right-2 bg-solidRed2 rounded-[20px] text-center text-white w-[58px] text-sm">

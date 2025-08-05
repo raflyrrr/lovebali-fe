@@ -13,7 +13,7 @@ import DailyTraffic from 'components/admin/default/DailyTraffic';
 import TaskCard from 'components/admin/default/TaskCard';
 import tableDataCheck from 'variables/data-tables/tableDataCheck';
 import tableDataComplex from 'variables/data-tables/tableDataComplex';
-import WarningBanner from 'components/widget/WarningBanner';
+import { WarningBanner } from 'components/widget/WarningBanner';
 import TKWBarChart from 'components/admin/default/TKWBarChart';
 import TotalKontribusiLineChart from 'components/admin/default/TotalKontribusiLineChart';
 import TotalIncomeLineChart from 'components/admin/default/TotalIncomeLineChart';

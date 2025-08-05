@@ -154,6 +154,139 @@ export const barChartDataTKW = [
   },
 ];
 
+export const barChartDataDKP = [
+  {
+    name: 'QRIS',
+    data: [
+      31, 40, 28, 51, 42, 109, 100, 111, 90, 110, 35, 45, 30, 49, 40, 70, 91,
+      100, 80, 85,
+    ],
+  },
+  {
+    name: 'Virtual Account',
+    data: [
+      11, 32, 45, 32, 34, 52, 41, 55, 25, 60, 40, 50, 35, 40, 45, 50, 61, 52,
+      65, 70,
+    ],
+  },
+  {
+    name: 'eVisa',
+    data: [
+      10, 15, 12, 18, 20, 22, 19, 25, 18, 30, 15, 20, 15, 22, 18, 25, 28, 20,
+      30, 35,
+    ],
+  },
+  {
+    name: 'Tunai',
+    data: [
+      12, 17, 11, 9, 15, 21, 20, 22, 15, 25, 18, 22, 17, 20, 22, 28, 30, 25, 28,
+      30,
+    ],
+  },
+];
+
+export const barChartOptionsDKP: ApexOptions = {
+  chart: {
+    type: 'bar',
+    stacked: true, // Kunci untuk membuat chart bertumpuk (stacked)
+    toolbar: {
+      show: false, // Sembunyikan toolbar default
+    },
+    zoom: {
+      enabled: false,
+    },
+  },
+  // Pengaturan tampilan bar
+  plotOptions: {
+    bar: {
+      horizontal: false,
+      borderRadius: 12, // Membuat bar memiliki sudut melengkung
+      columnWidth: '55%', // Lebar dari setiap bar
+      dataLabels: {
+        total: {
+          enabled: false, // Tidak menampilkan total di atas bar
+        },
+      },
+    },
+  },
+
+  // Pengaturan sumbu-X (horizontal)
+  xaxis: {
+    categories: [
+      '01',
+      '02',
+      '03',
+      '04',
+      '05',
+      '06',
+      '07',
+      '08',
+      '09',
+      '10',
+      '11',
+      '12',
+      '13',
+      '14',
+      '15',
+      '16',
+      '17',
+      '18',
+      '19',
+      '20',
+    ],
+    axisBorder: {
+      show: false, // Sembunyikan garis sumbu-X
+    },
+    axisTicks: {
+      show: false, // Sembunyikan ticks sumbu-X
+    },
+    labels: {
+      style: {
+        colors: '#6B7280', // Warna label sumbu-X
+        fontSize: '12px',
+      },
+    },
+  },
+  // Pengaturan sumbu-Y (vertikal)
+  yaxis: {
+    show: false, // Sembunyikan seluruh sumbu-Y
+  },
+  // Pengaturan legenda
+  legend: {
+    position: 'bottom', // Posisi legenda di bawah
+    horizontalAlign: 'left', // Rata kiri
+    offsetY: 10,
+    markers: {
+      shape: 'circle', // Bentuk marker di legenda
+      // height: 12,
+      // radius: 12, // Membuat marker menjadi lingkaran
+    },
+    itemMargin: {
+      horizontal: 20,
+    },
+  },
+  // Warna untuk setiap series data
+  colors: [
+    '#D51F27', // QRIS - warna penuh
+    '#D51F27CC', // Virtual Account - 80% opacity
+    '#D51F2799', // eVisa - 60% opacity
+    '#D51F2766', // Tunai - 40% opacity
+  ], // Pengaturan grid
+  grid: {
+    show: false, // Sembunyikan garis-garis grid
+  },
+  // Pengaturan data label (angka di dalam bar)
+  dataLabels: {
+    enabled: false,
+  },
+  // Pengaturan tooltip saat hover
+  tooltip: {
+    y: {
+      formatter: (val) => `${val} orang`,
+    },
+  },
+};
+
 export const barChartOptionsTKW = {
   chart: {
     type: 'bar',
